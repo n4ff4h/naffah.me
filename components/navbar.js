@@ -8,7 +8,13 @@ function NavItem({ children, href }) {
 
   return (
     <NextLink href={href} passHref>
-      <Link px={3} py={2} mx={2} style={{ textDecoration: "none" }}>
+      <Link
+        px={3}
+        py={2}
+        mx={2}
+        style={{ textDecoration: "none" }}
+        borderBottom={active ? "2px solid black" : undefined}
+      >
         {children}
       </Link>
     </NextLink>
