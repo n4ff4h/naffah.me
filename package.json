@@ -1,6 +1,7 @@
 {
   "name": "naffah.me",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "Naffah's portfolio website",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,7 +9,14 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "keywords": [],
+  "author": "Naffah Abdulla Rasheed",
+  "license": "MIT",
   "dependencies": {
+    "@chakra-ui/react": "^2.1.0",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "framer-motion": "^6.3.3",
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0"
