@@ -9,7 +9,13 @@ function NavItem({ children, href }) {
   return (
     <>
       <NextLink href={href} passHref>
-        <Link px={3} pt={2} mx={2} style={{ textDecoration: "none" }}>
+        <Link
+          px={3}
+          pt={2}
+          mx={2}
+          style={{ textDecoration: "none" }}
+          color="darkPurple"
+        >
           {children}
           <ScaleFade initialScale={0.9} in={active}>
             <Box
