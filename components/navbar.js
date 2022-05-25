@@ -1,4 +1,4 @@
-import { Flex, Link } from "@chakra-ui/react";
+import { Box, Flex, Link, ScaleFade } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import NextLink from "next/link";
 
@@ -7,17 +7,16 @@ function NavItem({ children, href }) {
   const active = router.asPath === href;
 
   return (
-    <NextLink href={href} passHref>
-      <Link
-        px={3}
-        py={2}
-        mx={2}
-        style={{ textDecoration: "none" }}
-        borderBottom={active ? "2px solid black" : undefined}
-      >
-        {children}
-      </Link>
-    </NextLink>
+    <>
+      <NextLink href={href} passHref>
+        <Link px={3} pt={2} mx={2} style={{ textDecoration: "none" }}>
+          {children}
+          <ScaleFade initialScale={0.9} in={active}>
+            <Box width="full" border="solid 1px" mt={1}></Box>
+          </ScaleFade>
+        </Link>
+      </NextLink>
+    </>
   );
 }
 
