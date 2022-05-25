@@ -1,4 +1,5 @@
-import { Box, Container } from "@chakra-ui/react";
+import { Container, Flex } from "@chakra-ui/react";
+import Footer from "../footer";
 import Meta from "../meta";
 import Navbar from "../navbar";
 
@@ -6,9 +7,12 @@ export default function MainLayout({ children }) {
   return (
     <>
       <Meta />
-      <Container as="main" maxW="container.md" minH="calc(100vh)">
-        <Navbar />
-        <Box>{children}</Box>
+      <Container as="main" maxW="container.md">
+        <Flex flexDirection="column" minH="100vh">
+          <Navbar />
+          {children}
+          <Footer />
+        </Flex>
       </Container>
     </>
   );

@@ -12,7 +12,13 @@ function NavItem({ children, href }) {
         <Link px={3} pt={2} mx={2} style={{ textDecoration: "none" }}>
           {children}
           <ScaleFade initialScale={0.9} in={active}>
-            <Box width="full" border="solid 1px" mt={1}></Box>
+            <Box
+              width="full"
+              border="solid 1.5px"
+              borderRadius={24}
+              borderColor="primary"
+              mt={1}
+            ></Box>
           </ScaleFade>
         </Link>
       </NextLink>
