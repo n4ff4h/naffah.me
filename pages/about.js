@@ -4,7 +4,7 @@ import MainLayout from "../components/layouts/main";
 export default function About() {
   return (
     <MainLayout>
-      <Flex h="full" py={12} mb="auto" direction="column">
+      <Flex minH="full" py={12} mb="auto" direction="column">
         <Flex justify="center" pt={6} pb={8}>
           <Image
             priority
@@ -22,11 +22,15 @@ export default function About() {
             fontSize={{ base: "xl", sm: "2xl" }}
             fontWeight="semibold"
             color="#5b6988"
+            pb={2}
           >
-            👋 Hi there, I&apos;m Naffah
+            👋 Hi there, I&apos;m Naffah.
           </Text>
           <Text fontSize={"md"} color="#5b6988">
-            A self taught web developer from Maldives 🌴.
+            A self taught web developer from Maldives 🌴. From a young age, i
+            found computers fascinating. This led me to tinker and expand my
+            knowledge in computer science. In my spare time, I enjoy learning
+            more about linux and playing chess.
           </Text>
         </Box>
       </Flex>
