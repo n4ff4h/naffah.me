@@ -28,13 +28,25 @@ export default function Home() {
           Full Stack Developer
         </Heading>
         <HStack justify="center" gap={3}>
-          <a href="https://twitter.com/n4ff4h">
+          <a
+            href="https://twitter.com/n4ff4h"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <UilTwitterAlt size="30" color="#48466D" />
           </a>
-          <a href="mailto:mail@naffah.me">
+          <a
+            href="mailto:mail@naffah.me"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <UilEnvelopeAlt size="30" color="#48466D" />
           </a>
-          <a href="https://github.com/n4ff4h">
+          <a
+            href="https://github.com/n4ff4h"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <UilGithubAlt size="30" color="#48466D" />
           </a>
         </HStack>
