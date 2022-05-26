@@ -1,7 +1,10 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import theme from "../lib/theme";
 
-import "@fontsource/open-sans/500.css";
+// font source
+import "@fontsource/inter/300.css";
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/600.css";
 import "@fontsource/inter/800.css";
 
 function MyApp({ Component, pageProps }) {

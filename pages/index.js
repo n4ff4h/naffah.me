@@ -6,6 +6,7 @@ import {
   UilGithubAlt,
   UilEnvelopeAlt,
 } from "@iconscout/react-unicons";
+import SocialLink from "../components/social-link";
 
 export default function Home() {
   return (
@@ -22,33 +23,21 @@ export default function Home() {
         <Heading
           fontSize={{ base: "2xl", md: "3xl" }}
           color="primary"
-          pb={12}
+          pb={6}
           textAlign="center"
         >
           Full Stack Developer
         </Heading>
         <HStack justify="center" gap={3}>
-          <a
-            href="https://twitter.com/n4ff4h"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <UilTwitterAlt size="30" color="#48466D" />
-          </a>
-          <a
-            href="mailto:mail@naffah.me"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <UilEnvelopeAlt size="30" color="#48466D" />
-          </a>
-          <a
-            href="https://github.com/n4ff4h"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <UilGithubAlt size="30" color="#48466D" />
-          </a>
+          <SocialLink href="https://twitter.com/n4ff4h">
+            <UilTwitterAlt size="30" color="#FF8C8C" />
+          </SocialLink>
+          <SocialLink href="mailto:mail@naffah.me">
+            <UilEnvelopeAlt size="30" color="#FF8C8C" />
+          </SocialLink>
+          <SocialLink href="https://github.com/n4ff4h">
+            <UilGithubAlt size="30" color="#FF8C8C" />
+          </SocialLink>
         </HStack>
       </VStack>
     </MainLayout>

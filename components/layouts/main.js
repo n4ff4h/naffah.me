@@ -8,7 +8,7 @@ export default function MainLayout({ children }) {
     <>
       <Meta />
       <Container as="main" maxW="container.md">
-        <Flex flexDirection="column" minH="100vh">
+        <Flex flexDirection="column" minH="100vh" px={4}>
           <Navbar />
           {children}
           <Footer />
