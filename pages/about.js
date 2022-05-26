@@ -17,7 +17,7 @@ export default function About() {
         <Heading fontSize="3xl" color="darkPurple" textAlign="center" pb={12}>
           Who am I?
         </Heading>
-        <Box background="#f6f8fb" p={9} borderRadius={8}>
+        <Box background="#f6f8fb" p={9} borderRadius={8} mb={24}>
           <Text
             fontSize={{ base: "xl", sm: "2xl" }}
             fontWeight="semibold"
@@ -27,12 +27,15 @@ export default function About() {
             👋 Hi there, I&apos;m Naffah.
           </Text>
           <Text fontSize={"md"} color="#5b6988">
-            A self taught web developer from Maldives 🌴. From a young age, i
-            found computers fascinating. This led me to tinker and expand my
-            knowledge in computer science. In my spare time, I enjoy learning
-            more about linux and playing chess.
+            A self taught developer from Maldives 🌴. From a young age, i found
+            computers fascinating. This led me to tinker and expand my knowledge
+            in computer science. In my spare time, I enjoy learning more about
+            linux and playing chess.
           </Text>
         </Box>
+        <Heading fontSize="3xl" color="darkPurple" textAlign="center" pb={12}>
+          Skills
+        </Heading>
       </Flex>
     </MainLayout>
   );
