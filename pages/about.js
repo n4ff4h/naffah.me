@@ -47,7 +47,7 @@ export default function About() {
       <Heading fontSize="3xl" color="darkPurple" textAlign="center" pb={12}>
         Skills
       </Heading>
-      <Wrap justify="center" spacing="30px" mb={12}>
+      <Wrap justify="center" spacing="30px" mb={12} pt={2}>
         <SkillIcon Icon={Html5PlainWordmarkIcon} name="HTML" />
         <SkillIcon Icon={Css3PlainWordmarkIcon} name="CSS" />
         <SkillIcon Icon={BootstrapPlainIcon} name="Bootstrap" />

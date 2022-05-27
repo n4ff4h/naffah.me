@@ -1,5 +1,6 @@
 import { Box, Flex, Heading, WrapItem } from "@chakra-ui/react";
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function SkillIcon({ Icon, name }) {
   const [color, setColor] = React.useState("#CCD1E4");
@@ -16,6 +17,8 @@ export default function SkillIcon({ Icon, name }) {
     <WrapItem>
       <Flex direction="column">
         <Box
+          as={motion.div}
+          whileHover={{ scale: 1.1 }}
           pb={4}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
