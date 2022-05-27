@@ -1,5 +1,26 @@
-import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Heading,
+  Image,
+  Text,
+  Wrap,
+  WrapItem,
+} from "@chakra-ui/react";
 import MainLayout from "../components/layouts/main";
+import {
+  Html5PlainWordmarkIcon,
+  Css3PlainWordmarkIcon,
+  BootstrapPlainIcon,
+  TailwindcssPlainIcon,
+  JavascriptPlainIcon,
+  ReactOriginalIcon,
+  NextjsOriginalIcon,
+  JavaPlainIcon,
+  PythonPlainIcon,
+  DjangoPlainIcon,
+} from "react-devicons";
+import SkillIcon from "../components/skill-icon";
 
 export default function About() {
   return (
@@ -36,6 +57,18 @@ export default function About() {
         <Heading fontSize="3xl" color="darkPurple" textAlign="center" pb={12}>
           Skills
         </Heading>
+        <Wrap justify="center" spacing="30px" mb={12}>
+          <SkillIcon Icon={Html5PlainWordmarkIcon} name="HTML" />
+          <SkillIcon Icon={Css3PlainWordmarkIcon} name="CSS" />
+          <SkillIcon Icon={BootstrapPlainIcon} name="Bootstrap" />
+          <SkillIcon Icon={TailwindcssPlainIcon} name="Tailwind" />
+          <SkillIcon Icon={JavascriptPlainIcon} name="Javascript" />
+          <SkillIcon Icon={ReactOriginalIcon} name="React" />
+          <SkillIcon Icon={NextjsOriginalIcon} name="Next" />
+          <SkillIcon Icon={JavaPlainIcon} name="Java" />
+          <SkillIcon Icon={PythonPlainIcon} name="Python" />
+          <SkillIcon Icon={DjangoPlainIcon} name="Django" />
+        </Wrap>
       </Flex>
     </MainLayout>
   );

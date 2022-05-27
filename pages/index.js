@@ -29,15 +29,9 @@ export default function Home() {
           Full Stack Developer
         </Heading>
         <HStack justify="center" gap={3}>
-          <SocialLink href="https://twitter.com/n4ff4h">
-            <UilTwitterAlt size="30" color="#FF8C8C" />
-          </SocialLink>
-          <SocialLink href="mailto:mail@naffah.me">
-            <UilEnvelopeAlt size="30" color="#FF8C8C" />
-          </SocialLink>
-          <SocialLink href="https://github.com/n4ff4h">
-            <UilGithubAlt size="30" color="#FF8C8C" />
-          </SocialLink>
+          <SocialLink Icon={UilTwitterAlt} href="https://twitter.com/n4ff4h" />
+          <SocialLink Icon={UilEnvelopeAlt} href="mailto:mail@naffah.me" />
+          <SocialLink Icon={UilGithubAlt} href="https://github.com/n4ff4h" />
         </HStack>
       </VStack>
     </MainLayout>
