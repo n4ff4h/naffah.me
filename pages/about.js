@@ -51,7 +51,7 @@ export default function About() {
             A self taught developer from Maldives 🌴. From a young age, i found
             computers fascinating. This led me to tinker and expand my knowledge
             in computer science. In my spare time, I enjoy learning more about
-            linux and playing chess.
+            linux and playing chess. Oh, and i love coffee ☕️.
           </Text>
         </Box>
         <Heading fontSize="3xl" color="darkPurple" textAlign="center" pb={12}>
