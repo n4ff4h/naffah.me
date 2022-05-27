@@ -1,4 +1,4 @@
-import { Box, Center, Container } from "@chakra-ui/react";
+import { Box, Center, Container, Link, Text } from "@chakra-ui/react";
 
 export default function Footer() {
   return (
@@ -8,7 +8,15 @@ export default function Footer() {
           © 2022 Naffah Abdulla Rasheed.
         </Center>
         <Center fontSize="sm" color="#5b6988">
-          Built with Next.js
+          Built with{" "}
+          <Link
+            href="https://nextjs.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ml={1}
+          >
+            <Text as="u">Next.js</Text>
+          </Link>
         </Center>
       </Container>
     </Box>
