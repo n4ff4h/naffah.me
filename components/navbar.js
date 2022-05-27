@@ -11,7 +11,7 @@ function NavItem({ children, href }) {
       <NextLink href={href} passHref>
         <Link
           px={2}
-          pt={1}
+          pt={2}
           mx={2}
           style={{ textDecoration: "none" }}
           color={active ? "darkPurple" : "#908f94"}
@@ -24,6 +24,7 @@ function NavItem({ children, href }) {
               border="solid 1.5px"
               borderRadius={24}
               borderColor="primary"
+              mb={1}
             ></Box>
           </ScaleFade>
         </Link>
