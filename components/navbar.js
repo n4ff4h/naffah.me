@@ -14,7 +14,8 @@ function NavItem({ children, href }) {
           pt={1}
           mx={2}
           style={{ textDecoration: "none" }}
-          color="darkPurple"
+          color={active ? "darkPurple" : "#908f94"}
+          fontWeight="semibold"
         >
           {children}
           <ScaleFade initialScale={0.9} in={active}>
