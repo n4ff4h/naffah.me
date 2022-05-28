@@ -6,7 +6,7 @@ export default function SocialLink({ Icon, href }) {
   const [color, setColor] = React.useState("#FF8C8C");
 
   function handleMouseEnter() {
-    setColor("#FF8080");
+    setColor("#FF7777");
   }
 
   function handleMouseLeave() {
