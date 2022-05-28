@@ -1,6 +1,7 @@
 {
   "name": "naffah.me",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "Naffah's portfolio website",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,9 +9,23 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "keywords": [],
+  "author": "Naffah Abdulla Rasheed",
+  "license": "MIT",
   "dependencies": {
+    "@chakra-ui/react": "^2.1.0",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@fontsource/inter": "^4.5.10",
+    "@fontsource/open-sans": "^4.5.10",
+    "@fontsource/quicksand": "^4.5.9",
+    "@iconscout/react-unicons": "^1.1.6",
+    "@lottiefiles/react-lottie-player": "^3.4.7",
+    "focus-visible": "^5.2.0",
+    "framer-motion": "^6.3.3",
     "next": "12.1.6",
     "react": "18.1.0",
+    "react-devicons": "^2.14.0",
     "react-dom": "18.1.0"
   },
   "devDependencies": {
