@@ -9,7 +9,7 @@ import SocialLink from "../components/social-link";
 
 export default function Home() {
   return (
-    <VStack h="full" py={12} align="center" my="auto">
+    <VStack h="full" py={12} align="center">
       <Heading
         fontSize={{ base: "4xl", md: "5xl" }}
         color="darkPurple"
