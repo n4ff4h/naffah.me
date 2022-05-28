@@ -48,16 +48,52 @@ export default function About() {
         Skills
       </Heading>
       <Wrap justify="center" spacing="30px" mb={12} pt={2}>
-        <SkillIcon Icon={Html5PlainWordmarkIcon} name="HTML" />
-        <SkillIcon Icon={Css3PlainWordmarkIcon} name="CSS" />
-        <SkillIcon Icon={BootstrapPlainIcon} name="Bootstrap" />
-        <SkillIcon Icon={TailwindcssPlainIcon} name="Tailwind" />
-        <SkillIcon Icon={JavascriptPlainIcon} name="Javascript" />
-        <SkillIcon Icon={ReactOriginalIcon} name="React" />
-        <SkillIcon Icon={NextjsOriginalIcon} name="Next" />
-        <SkillIcon Icon={JavaPlainIcon} name="Java" />
-        <SkillIcon Icon={PythonPlainIcon} name="Python" />
-        <SkillIcon Icon={DjangoPlainIcon} name="Django" />
+        <SkillIcon
+          Icon={Html5PlainWordmarkIcon}
+          name="HTML"
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+        />
+        <SkillIcon
+          Icon={Css3PlainWordmarkIcon}
+          name="CSS"
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+        />
+        <SkillIcon
+          Icon={BootstrapPlainIcon}
+          name="Bootstrap"
+          href="https://getbootstrap.com/"
+        />
+        <SkillIcon
+          Icon={TailwindcssPlainIcon}
+          name="Tailwind"
+          href="https://tailwindcss.com/"
+        />
+        <SkillIcon
+          Icon={JavascriptPlainIcon}
+          name="Javascript"
+          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        />
+        <SkillIcon
+          Icon={ReactOriginalIcon}
+          name="React"
+          href="https://reactjs.org/"
+        />
+        <SkillIcon
+          Icon={NextjsOriginalIcon}
+          name="Next"
+          href="https://nextjs.org/"
+        />
+        <SkillIcon Icon={JavaPlainIcon} name="Java" href="https://dev.java/" />
+        <SkillIcon
+          Icon={PythonPlainIcon}
+          name="Python"
+          href="https://www.python.org/"
+        />
+        <SkillIcon
+          Icon={DjangoPlainIcon}
+          name="Django"
+          href="https://www.djangoproject.com/"
+        />
       </Wrap>
     </Flex>
   );

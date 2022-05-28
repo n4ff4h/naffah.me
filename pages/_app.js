@@ -19,19 +19,29 @@ function MyApp({ Component, pageProps, router }) {
   return (
     <ChakraProvider theme={theme}>
       <MainLayout>
-        <Box
-          as={motion.div}
-          key={router.route}
-          initial="hidden"
-          animate="enter"
-          exit="exit"
-          variants={variants}
-          transition={{ duration: 0.4, type: "easeInOut" }}
-          style={{ position: "relative" }}
-          my="auto"
+        <AnimatePresence
+          exitBeforeEnter
+          initial={true}
+          onExitComplete={() => {
+            if (typeof window !== "undefined") {
+              window.scrollTo({ top: 0 });
+            }
+          }}
         >
-          <Component {...pageProps} />
-        </Box>
+          <Box
+            as={motion.div}
+            key={router.route}
+            initial="hidden"
+            animate="enter"
+            exit="exit"
+            variants={variants}
+            transition={{ duration: 0.4, type: "easeInOut" }}
+            style={{ position: "relative" }}
+            my="auto"
+          >
+            <Component {...pageProps} />
+          </Box>
+        </AnimatePresence>
       </MainLayout>
     </ChakraProvider>
   );

@@ -1,8 +1,8 @@
-import { Box, Flex, Heading, WrapItem } from "@chakra-ui/react";
+import { Box, Flex, Heading, Link, WrapItem } from "@chakra-ui/react";
 import React from "react";
 import { motion } from "framer-motion";
 
-export default function SkillIcon({ Icon, name }) {
+export default function SkillIcon({ Icon, name, href }) {
   const [color, setColor] = React.useState("#CCD1E4");
 
   function handleMouseEnter() {
@@ -23,7 +23,9 @@ export default function SkillIcon({ Icon, name }) {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          <Icon size="6em" color={color} />
+          <Link href={href} target="_blank" rel="noopener noreferrer">
+            <Icon size="6em" color={color} />
+          </Link>
         </Box>
         <Heading fontSize="md" textAlign="center" color="#5b6988">
           {name}
