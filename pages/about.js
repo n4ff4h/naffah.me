@@ -18,7 +18,7 @@ export default function About() {
     <Flex minH="full" py={12} mb="auto" direction="column">
       <Flex justify="center" pt={6} pb={8}>
         <Image
-          priority
+          priority="true"
           src="/images/profile.jpeg"
           w={144}
           h={144}
@@ -38,10 +38,10 @@ export default function About() {
           👋 Hi there, I&apos;m Naffah.
         </Text>
         <Text fontSize={"md"} color="#5b6988">
-          A self taught developer from Maldives 🌴. From a young age, i found
+          A self taught developer from Maldives 🌴. From a young age, I found
           computers fascinating. This led me to tinker and expand my knowledge
           in computer science. In my spare time, I enjoy learning more about
-          linux and playing chess. Oh, and i love coffee ☕️.
+          linux and playing chess. Oh, and I love coffee ☕️.
         </Text>
       </Box>
       <Heading fontSize="3xl" color="darkPurple" textAlign="center" pb={12}>
