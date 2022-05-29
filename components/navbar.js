@@ -23,7 +23,7 @@ function NavItem({ children, href }) {
               width="full"
               border="solid 1.5px"
               borderRadius={24}
-              borderColor="primary"
+              color="primary"
               mb={1}
             ></Box>
           </ScaleFade>
