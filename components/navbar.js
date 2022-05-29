@@ -24,6 +24,7 @@ function NavItem({ children, href }) {
               border="solid 1.5px"
               borderRadius={24}
               color="primary"
+              background="primary"
               mb={1}
             ></Box>
           </ScaleFade>
