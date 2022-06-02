@@ -1,6 +1,7 @@
-import { Box, Flex, Link, ScaleFade } from "@chakra-ui/react";
+import { Box, Flex, Link } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import NextLink from "next/link";
+import { motion } from "framer-motion";
 
 function NavItem({ children, href }) {
   const router = useRouter();
@@ -18,8 +19,10 @@ function NavItem({ children, href }) {
           fontWeight="semibold"
         >
           {children}
-          <ScaleFade initialScale={0.9} in={active}>
+          {active ? (
             <Box
+              as={motion.div}
+              layoutId="underline"
               width="full"
               border="solid 1.5px"
               borderRadius={24}
@@ -27,7 +30,7 @@ function NavItem({ children, href }) {
               background="primary"
               mb={1}
             ></Box>
-          </ScaleFade>
+          ) : null}
         </Link>
       </NextLink>
     </>
@@ -35,12 +38,20 @@ function NavItem({ children, href }) {
 }
 
 export default function Navbar() {
+  const items = [
+    { page: "Home", href: "/" },
+    { page: "About", href: "/about" },
+    { page: "Works", href: "/works" },
+  ];
+
   return (
     <Flex as="nav" py={4} justify="center">
       <Flex>
-        <NavItem href="/">Home</NavItem>
-        <NavItem href="/about">About</NavItem>
-        <NavItem href="/works">Works</NavItem>
+        {items.map((item) => (
+          <NavItem href={item.href} key={item.page}>
+            {item.page}
+          </NavItem>
+        ))}
       </Flex>
     </Flex>
   );
