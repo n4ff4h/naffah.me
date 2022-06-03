@@ -21,12 +21,12 @@ export default function Home() {
       <Heading
         fontSize={{ base: "2xl", md: "3xl" }}
         color="primary"
-        pb={6}
+        pb={7}
         textAlign="center"
       >
         Full Stack Developer
       </Heading>
-      <HStack justify="center" gap={3}>
+      <HStack justify="center" gap={4}>
         <SocialLink Icon={UilTwitterAlt} href="https://twitter.com/n4ff4h" />
         <SocialLink Icon={UilEnvelopeAlt} href="mailto:mail@naffah.me" />
         <SocialLink Icon={UilGithubAlt} href="https://github.com/n4ff4h" />
